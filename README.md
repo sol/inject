@@ -1,14 +1,16 @@
-# Inject the output of shell commands into arbitrary text templates
+# Inject: A minimalistic template engine
+
+Inject expands shell commands in arbitrary text templates.
 
 ## Example
 
 Given a file `input.txt` with
 
 ```
-My {{{echo fancy}}} template!
+My {{echo -n fancy}} template!
 ```
 
-When I run `inject < input.txt` > output.txt` I get
+When I run `inject < input.txt` I get
 
 ```
 My fancy template!
